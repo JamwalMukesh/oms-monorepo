@@ -1,10 +1,15 @@
-import './App.css'
+import { Button, Typography } from "@mui/material"
 
 function App() {
   
   return (
-    <div>
-      <h1>Order Management System</h1>
+    <div style={{padding: 20}}>
+      <Typography variant="h4" color="primary">
+        Order Management System
+      </Typography>
+      <Button variant="contained" color="primary">
+        Create Order
+      </Button>
     </div>
   )
 }
