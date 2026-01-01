@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+
+# Node
+node_modules/
+dist/
+
+# Java
+target/
+*.log
+
+# IDEs
+.idea/
+.vscode/
+
+# Env
+.env
