@@ -1,4 +1,5 @@
-import { Button, Typography } from "@mui/material"
+import {  Typography } from "@mui/material"
+import CreateOrderPage from "./pages/CreateOrderPage"
 
 function App() {
   
@@ -7,9 +8,7 @@ function App() {
       <Typography variant="h4" color="primary">
         Order Management System
       </Typography>
-      <Button variant="contained" color="primary">
-        Create Order
-      </Button>
+      <CreateOrderPage />
     </div>
   )
 }
