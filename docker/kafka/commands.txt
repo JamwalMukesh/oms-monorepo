@@ -1,3 +1,4 @@
+--- Create Topics for Order Creation
 docker exec -it kafka kafka-topics \
   --create \
   --topic order-created-topic \
@@ -5,7 +6,15 @@ docker exec -it kafka kafka-topics \
   --partitions 1 \
   --replication-factor 1
 
+--- Create Topic for Payment service
+docker exec -it kafka kafka-topics \
+  --create \
+  --topic payment-completed-topic \
+  --bootstrap-server localhost:9092 \
+  --partitions 1 \
+  --replication-factor 1
 
+--- List out the kafka topics
   docker exec -it kafka kafka-topics \
   --list \
   --bootstrap-server localhost:9092
