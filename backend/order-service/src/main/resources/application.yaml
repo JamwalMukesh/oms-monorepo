@@ -15,3 +15,6 @@ spring:
   h2:
     console:
       enabled: true
+
+  kafka:
+    bootstrap-servers: kafka:9092
