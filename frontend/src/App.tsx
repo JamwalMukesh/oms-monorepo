@@ -1,16 +1,10 @@
-import {  Typography } from "@mui/material"
-import CreateOrderPage from "./pages/CreateOrderPage"
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
-function App() {
-  
+export default function App() {
   return (
-    <div style={{padding: 20}}>
-      <Typography variant="h4" color="primary">
-        Order Management System
-      </Typography>
-      <CreateOrderPage />
-    </div>
-  )
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
-
-export default App
